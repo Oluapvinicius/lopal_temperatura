@@ -25,7 +25,7 @@ public class TelaConversor {
 
 		JFrame tela = new JFrame();
 
-		                //tamanho da tela
+		// tamanho da tela
 		tela.setSize(600, 400);
 		tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		tela.setTitle("Conversor");
@@ -33,7 +33,7 @@ public class TelaConversor {
 		tela.setLocationRelativeTo(null);
 		tela.setResizable(false);
 
-		                    //JLabel e o JTextField para o celsius
+		// JLabel e o JTextField para o celsius
 		labelCelsius = new JLabel();
 		labelCelsius.setFont(labels);
 		labelCelsius.setText("Digite o valor em celsius para converter");
@@ -44,25 +44,25 @@ public class TelaConversor {
 		textCelsius.setBounds(75, 80, 450, 50);
 		textCelsius.setHorizontalAlignment(JTextField.CENTER);
 
-		//JButton para o Kelvin
+		// JButton para o Kelvin
 		buttonKelvin = new JButton();
 		buttonKelvin.setBounds(75, 140, 180, 30);
 		buttonKelvin.setText("Kelvin");
 		buttonKelvin.setFont(labels);
 
-		//JButton para o Fahreinheit
+		// JButton para o Fahreinheit
 		buttonFahreinheit = new JButton();
 		buttonFahreinheit.setBounds(305, 140, 180, 30);
 		buttonFahreinheit.setText("Fahreinheit");
 		buttonFahreinheit.setFont(labels);
 
-		//JLabel para o Resultado
+		// JLabel para o Resultado
 		labelResultado = new JLabel();
 		labelResultado.setText(null);
 		labelResultado.setBounds(180, 200, 250, 30);
 		labelResultado.setFont(labels);
 
-		//JLabel para a mensagem de Erro
+		// JLabel para a mensagem de Erro
 		labelMensagemErro = new JLabel();
 		labelMensagemErro.setText(null);
 		labelMensagemErro.setBounds(75, 260, 450, 30);
@@ -75,7 +75,7 @@ public class TelaConversor {
 		tela.getContentPane().add(labelResultado);
 		tela.getContentPane().add(labelMensagemErro);
 
-		//Listener ao botão calcular
+		// Listener ao botão calcular
 		buttonKelvin.addActionListener(new ActionListener() {
 
 			@Override
